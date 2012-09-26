@@ -42,10 +42,14 @@
 
 - (void)loadView {
     [super loadView];
-    self.collectionView = [[PSTCollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.layout];
-    [self.view addSubview:self.collectionView];
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
+		
+		if (!_collectionView) {
+			_collectionView = [[PSTCollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.layout];
+			_collectionView.delegate = self;
+			_collectionView.dataSource = self;
+			[self.view addSubview:_collectionView];
+			self.collectionView = _collectionView;
+		}
 }
 
 - (void)viewWillAppear:(BOOL)animated {
