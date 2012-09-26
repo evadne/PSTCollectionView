@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFF1195F16139949002F1DD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF1195E16139949002F1DD4 /* UIKit.framework */; };
+		FFF1196116139949002F1DD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF1196016139949002F1DD4 /* Foundation.framework */; };
+		FFF1196316139949002F1DD4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF1196216139949002F1DD4 /* CoreGraphics.framework */; };
+		FFF1196916139949002F1DD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFF1196716139949002F1DD4 /* InfoPlist.strings */; };
+		FFF1196B16139949002F1DD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1196A16139949002F1DD4 /* main.m */; };
+		FFF1196F16139949002F1DD4 /* RIBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1196E16139949002F1DD4 /* RIBAppDelegate.m */; };
+		FFF1197116139949002F1DD4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FFF1197016139949002F1DD4 /* Default.png */; };
+		FFF1197316139949002F1DD4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFF1197216139949002F1DD4 /* Default@2x.png */; };
+		FFF1197516139949002F1DD4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFF1197416139949002F1DD4 /* Default-568h@2x.png */; };
+		FFF119811613998F002F1DD4 /* RIBApplication.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF119801613998F002F1DD4 /* RIBApplication.xib */; };
+		FFF119A716139A40002F1DD4 /* RIBCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF119A616139A40002F1DD4 /* RIBCollectionViewController.m */; };
+		FFF119A916139A6F002F1DD4 /* RIBCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF119A816139A6F002F1DD4 /* RIBCollectionView.xib */; };
+		FFF119AB16139A90002F1DD4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF119AA16139A90002F1DD4 /* QuartzCore.framework */; };
+		FFF119AE16139D91002F1DD4 /* RIBCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF119AD16139D91002F1DD4 /* RIBCollectionView.m */; };
+		FFF119B716139F3A002F1DD4 /* RIBCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF119B616139F3A002F1DD4 /* RIBCollectionViewCell.xib */; };
+		FFF119BA16139F60002F1DD4 /* RIBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF119B916139F60002F1DD4 /* RIBCollectionViewCell.m */; };
+		FFF119BB1613A6DB002F1DD4 /* PSTCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1198416139A1D002F1DD4 /* PSTCollectionView.m */; };
+		FFF119BC1613A6DB002F1DD4 /* PSTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1198616139A1D002F1DD4 /* PSTCollectionViewCell.m */; };
+		FFF119BD1613A6DB002F1DD4 /* PSTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1198916139A1D002F1DD4 /* PSTCollectionViewController.m */; };
+		FFF119BE1613A6DB002F1DD4 /* PSTCollectionViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1198B16139A1D002F1DD4 /* PSTCollectionViewData.m */; };
+		FFF119BF1613A6DB002F1DD4 /* PSTCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1198D16139A1D002F1DD4 /* PSTCollectionViewFlowLayout.m */; };
+		FFF119C01613A6DB002F1DD4 /* PSTCollectionViewItemKey.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1198F16139A1D002F1DD4 /* PSTCollectionViewItemKey.m */; };
+		FFF119C11613A6DB002F1DD4 /* PSTCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1199116139A1D002F1DD4 /* PSTCollectionViewLayout.m */; };
+		FFF119C21613A6DB002F1DD4 /* PSTGridLayoutInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1199316139A1D002F1DD4 /* PSTGridLayoutInfo.m */; };
+		FFF119C31613A6DB002F1DD4 /* PSTGridLayoutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1199516139A1D002F1DD4 /* PSTGridLayoutItem.m */; };
+		FFF119C41613A6DB002F1DD4 /* PSTGridLayoutRow.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1199716139A1D002F1DD4 /* PSTGridLayoutRow.m */; };
+		FFF119C51613A6DB002F1DD4 /* PSTGridLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF1199916139A1D002F1DD4 /* PSTGridLayoutSection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFF1195A16139949002F1DD4 /* InterfaceBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterfaceBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF1195E16139949002F1DD4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFF1196016139949002F1DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFF1196216139949002F1DD4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFF1196616139949002F1DD4 /* InterfaceBuilder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InterfaceBuilder-Info.plist"; sourceTree = "<group>"; };
+		FFF1196816139949002F1DD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFF1196A16139949002F1DD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFF1196C16139949002F1DD4 /* InterfaceBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InterfaceBuilder-Prefix.pch"; sourceTree = "<group>"; };
+		FFF1196D16139949002F1DD4 /* RIBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RIBAppDelegate.h; path = InterfaceBuilder/RIBAppDelegate.h; sourceTree = "<group>"; };
+		FFF1196E16139949002F1DD4 /* RIBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RIBAppDelegate.m; path = InterfaceBuilder/RIBAppDelegate.m; sourceTree = "<group>"; };
+		FFF1197016139949002F1DD4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FFF1197216139949002F1DD4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FFF1197416139949002F1DD4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FFF119801613998F002F1DD4 /* RIBApplication.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RIBApplication.xib; path = InterfaceBuilder/RIBApplication.xib; sourceTree = "<group>"; };
+		FFF1198316139A1D002F1DD4 /* PSTCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionView.h; sourceTree = "<group>"; };
+		FFF1198416139A1D002F1DD4 /* PSTCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionView.m; sourceTree = "<group>"; };
+		FFF1198516139A1D002F1DD4 /* PSTCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewCell.h; sourceTree = "<group>"; };
+		FFF1198616139A1D002F1DD4 /* PSTCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewCell.m; sourceTree = "<group>"; };
+		FFF1198716139A1D002F1DD4 /* PSTCollectionViewCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewCommon.h; sourceTree = "<group>"; };
+		FFF1198816139A1D002F1DD4 /* PSTCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewController.h; sourceTree = "<group>"; };
+		FFF1198916139A1D002F1DD4 /* PSTCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewController.m; sourceTree = "<group>"; };
+		FFF1198A16139A1D002F1DD4 /* PSTCollectionViewData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewData.h; sourceTree = "<group>"; };
+		FFF1198B16139A1D002F1DD4 /* PSTCollectionViewData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewData.m; sourceTree = "<group>"; };
+		FFF1198C16139A1D002F1DD4 /* PSTCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		FFF1198D16139A1D002F1DD4 /* PSTCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		FFF1198E16139A1D002F1DD4 /* PSTCollectionViewItemKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewItemKey.h; sourceTree = "<group>"; };
+		FFF1198F16139A1D002F1DD4 /* PSTCollectionViewItemKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewItemKey.m; sourceTree = "<group>"; };
+		FFF1199016139A1D002F1DD4 /* PSTCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewLayout.h; sourceTree = "<group>"; };
+		FFF1199116139A1D002F1DD4 /* PSTCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionViewLayout.m; sourceTree = "<group>"; };
+		FFF1199216139A1D002F1DD4 /* PSTGridLayoutInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTGridLayoutInfo.h; sourceTree = "<group>"; };
+		FFF1199316139A1D002F1DD4 /* PSTGridLayoutInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutInfo.m; sourceTree = "<group>"; };
+		FFF1199416139A1D002F1DD4 /* PSTGridLayoutItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTGridLayoutItem.h; sourceTree = "<group>"; };
+		FFF1199516139A1D002F1DD4 /* PSTGridLayoutItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutItem.m; sourceTree = "<group>"; };
+		FFF1199616139A1D002F1DD4 /* PSTGridLayoutRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTGridLayoutRow.h; sourceTree = "<group>"; };
+		FFF1199716139A1D002F1DD4 /* PSTGridLayoutRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutRow.m; sourceTree = "<group>"; };
+		FFF1199816139A1D002F1DD4 /* PSTGridLayoutSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTGridLayoutSection.h; sourceTree = "<group>"; };
+		FFF1199916139A1D002F1DD4 /* PSTGridLayoutSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutSection.m; sourceTree = "<group>"; };
+		FFF119A516139A40002F1DD4 /* RIBCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RIBCollectionViewController.h; path = InterfaceBuilder/RIBCollectionViewController.h; sourceTree = "<group>"; };
+		FFF119A616139A40002F1DD4 /* RIBCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RIBCollectionViewController.m; path = InterfaceBuilder/RIBCollectionViewController.m; sourceTree = "<group>"; };
+		FFF119A816139A6F002F1DD4 /* RIBCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RIBCollectionView.xib; path = InterfaceBuilder/RIBCollectionView.xib; sourceTree = "<group>"; };
+		FFF119AA16139A90002F1DD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FFF119AC16139D91002F1DD4 /* RIBCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RIBCollectionView.h; path = InterfaceBuilder/RIBCollectionView.h; sourceTree = "<group>"; };
+		FFF119AD16139D91002F1DD4 /* RIBCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RIBCollectionView.m; path = InterfaceBuilder/RIBCollectionView.m; sourceTree = "<group>"; };
+		FFF119AF16139D9E002F1DD4 /* RIBCollectionViewCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RIBCollectionViewCommon.h; path = InterfaceBuilder/RIBCollectionViewCommon.h; sourceTree = "<group>"; };
+		FFF119B616139F3A002F1DD4 /* RIBCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RIBCollectionViewCell.xib; path = InterfaceBuilder/RIBCollectionViewCell.xib; sourceTree = "<group>"; };
+		FFF119B816139F60002F1DD4 /* RIBCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RIBCollectionViewCell.h; path = InterfaceBuilder/RIBCollectionViewCell.h; sourceTree = "<group>"; };
+		FFF119B916139F60002F1DD4 /* RIBCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RIBCollectionViewCell.m; path = InterfaceBuilder/RIBCollectionViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFF1195716139949002F1DD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF119AB16139A90002F1DD4 /* QuartzCore.framework in Frameworks */,
+				FFF1195F16139949002F1DD4 /* UIKit.framework in Frameworks */,
+				FFF1196116139949002F1DD4 /* Foundation.framework in Frameworks */,
+				FFF1196316139949002F1DD4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFF1194F16139949002F1DD4 = {
+			isa = PBXGroup;
+			children = (
+				FFF119801613998F002F1DD4 /* RIBApplication.xib */,
+				FFF119A816139A6F002F1DD4 /* RIBCollectionView.xib */,
+				FFF119B616139F3A002F1DD4 /* RIBCollectionViewCell.xib */,
+				FFF1196D16139949002F1DD4 /* RIBAppDelegate.h */,
+				FFF1196E16139949002F1DD4 /* RIBAppDelegate.m */,
+				FFF119AF16139D9E002F1DD4 /* RIBCollectionViewCommon.h */,
+				FFF119A516139A40002F1DD4 /* RIBCollectionViewController.h */,
+				FFF119A616139A40002F1DD4 /* RIBCollectionViewController.m */,
+				FFF119AC16139D91002F1DD4 /* RIBCollectionView.h */,
+				FFF119AD16139D91002F1DD4 /* RIBCollectionView.m */,
+				FFF119B816139F60002F1DD4 /* RIBCollectionViewCell.h */,
+				FFF119B916139F60002F1DD4 /* RIBCollectionViewCell.m */,
+				FFF1198216139A1D002F1DD4 /* PSTCollectionView */,
+				FFF1196516139949002F1DD4 /* Supporting Files */,
+				FFF1195D16139949002F1DD4 /* Frameworks */,
+				FFF1195B16139949002F1DD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFF1195B16139949002F1DD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFF1195A16139949002F1DD4 /* InterfaceBuilder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFF1195D16139949002F1DD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFF1196216139949002F1DD4 /* CoreGraphics.framework */,
+				FFF1196016139949002F1DD4 /* Foundation.framework */,
+				FFF119AA16139A90002F1DD4 /* QuartzCore.framework */,
+				FFF1195E16139949002F1DD4 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFF1196516139949002F1DD4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFF1196616139949002F1DD4 /* InterfaceBuilder-Info.plist */,
+				FFF1196716139949002F1DD4 /* InfoPlist.strings */,
+				FFF1196A16139949002F1DD4 /* main.m */,
+				FFF1196C16139949002F1DD4 /* InterfaceBuilder-Prefix.pch */,
+				FFF1197016139949002F1DD4 /* Default.png */,
+				FFF1197216139949002F1DD4 /* Default@2x.png */,
+				FFF1197416139949002F1DD4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			path = InterfaceBuilder;
+			sourceTree = "<group>";
+		};
+		FFF1198216139A1D002F1DD4 /* PSTCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				FFF1198316139A1D002F1DD4 /* PSTCollectionView.h */,
+				FFF1198416139A1D002F1DD4 /* PSTCollectionView.m */,
+				FFF1198516139A1D002F1DD4 /* PSTCollectionViewCell.h */,
+				FFF1198616139A1D002F1DD4 /* PSTCollectionViewCell.m */,
+				FFF1198716139A1D002F1DD4 /* PSTCollectionViewCommon.h */,
+				FFF1198816139A1D002F1DD4 /* PSTCollectionViewController.h */,
+				FFF1198916139A1D002F1DD4 /* PSTCollectionViewController.m */,
+				FFF1198A16139A1D002F1DD4 /* PSTCollectionViewData.h */,
+				FFF1198B16139A1D002F1DD4 /* PSTCollectionViewData.m */,
+				FFF1198C16139A1D002F1DD4 /* PSTCollectionViewFlowLayout.h */,
+				FFF1198D16139A1D002F1DD4 /* PSTCollectionViewFlowLayout.m */,
+				FFF1198E16139A1D002F1DD4 /* PSTCollectionViewItemKey.h */,
+				FFF1198F16139A1D002F1DD4 /* PSTCollectionViewItemKey.m */,
+				FFF1199016139A1D002F1DD4 /* PSTCollectionViewLayout.h */,
+				FFF1199116139A1D002F1DD4 /* PSTCollectionViewLayout.m */,
+				FFF1199216139A1D002F1DD4 /* PSTGridLayoutInfo.h */,
+				FFF1199316139A1D002F1DD4 /* PSTGridLayoutInfo.m */,
+				FFF1199416139A1D002F1DD4 /* PSTGridLayoutItem.h */,
+				FFF1199516139A1D002F1DD4 /* PSTGridLayoutItem.m */,
+				FFF1199616139A1D002F1DD4 /* PSTGridLayoutRow.h */,
+				FFF1199716139A1D002F1DD4 /* PSTGridLayoutRow.m */,
+				FFF1199816139A1D002F1DD4 /* PSTGridLayoutSection.h */,
+				FFF1199916139A1D002F1DD4 /* PSTGridLayoutSection.m */,
+			);
+			name = PSTCollectionView;
+			path = ../../PSTCollectionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFF1195916139949002F1DD4 /* InterfaceBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF1197816139949002F1DD4 /* Build configuration list for PBXNativeTarget "InterfaceBuilder" */;
+			buildPhases = (
+				FFF1195616139949002F1DD4 /* Sources */,
+				FFF1195716139949002F1DD4 /* Frameworks */,
+				FFF1195816139949002F1DD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InterfaceBuilder;
+			productName = InterfaceBuilder;
+			productReference = FFF1195A16139949002F1DD4 /* InterfaceBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFF1195116139949002F1DD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RIB;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Radius;
+			};
+			buildConfigurationList = FFF1195416139949002F1DD4 /* Build configuration list for PBXProject "InterfaceBuilder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FFF1194F16139949002F1DD4;
+			productRefGroup = FFF1195B16139949002F1DD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFF1195916139949002F1DD4 /* InterfaceBuilder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFF1195816139949002F1DD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF1196916139949002F1DD4 /* InfoPlist.strings in Resources */,
+				FFF1197116139949002F1DD4 /* Default.png in Resources */,
+				FFF1197316139949002F1DD4 /* Default@2x.png in Resources */,
+				FFF1197516139949002F1DD4 /* Default-568h@2x.png in Resources */,
+				FFF119811613998F002F1DD4 /* RIBApplication.xib in Resources */,
+				FFF119A916139A6F002F1DD4 /* RIBCollectionView.xib in Resources */,
+				FFF119B716139F3A002F1DD4 /* RIBCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFF1195616139949002F1DD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF1196B16139949002F1DD4 /* main.m in Sources */,
+				FFF1196F16139949002F1DD4 /* RIBAppDelegate.m in Sources */,
+				FFF119A716139A40002F1DD4 /* RIBCollectionViewController.m in Sources */,
+				FFF119AE16139D91002F1DD4 /* RIBCollectionView.m in Sources */,
+				FFF119BA16139F60002F1DD4 /* RIBCollectionViewCell.m in Sources */,
+				FFF119BB1613A6DB002F1DD4 /* PSTCollectionView.m in Sources */,
+				FFF119BC1613A6DB002F1DD4 /* PSTCollectionViewCell.m in Sources */,
+				FFF119BD1613A6DB002F1DD4 /* PSTCollectionViewController.m in Sources */,
+				FFF119BE1613A6DB002F1DD4 /* PSTCollectionViewData.m in Sources */,
+				FFF119BF1613A6DB002F1DD4 /* PSTCollectionViewFlowLayout.m in Sources */,
+				FFF119C01613A6DB002F1DD4 /* PSTCollectionViewItemKey.m in Sources */,
+				FFF119C11613A6DB002F1DD4 /* PSTCollectionViewLayout.m in Sources */,
+				FFF119C21613A6DB002F1DD4 /* PSTGridLayoutInfo.m in Sources */,
+				FFF119C31613A6DB002F1DD4 /* PSTGridLayoutItem.m in Sources */,
+				FFF119C41613A6DB002F1DD4 /* PSTGridLayoutRow.m in Sources */,
+				FFF119C51613A6DB002F1DD4 /* PSTGridLayoutSection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFF1196716139949002F1DD4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFF1196816139949002F1DD4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFF1197616139949002F1DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFF1197716139949002F1DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFF1197916139949002F1DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InterfaceBuilder/InterfaceBuilder-Prefix.pch";
+				INFOPLIST_FILE = "InterfaceBuilder/InterfaceBuilder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFF1197A16139949002F1DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InterfaceBuilder/InterfaceBuilder-Prefix.pch";
+				INFOPLIST_FILE = "InterfaceBuilder/InterfaceBuilder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFF1195416139949002F1DD4 /* Build configuration list for PBXProject "InterfaceBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF1197616139949002F1DD4 /* Debug */,
+				FFF1197716139949002F1DD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF1197816139949002F1DD4 /* Build configuration list for PBXNativeTarget "InterfaceBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF1197916139949002F1DD4 /* Debug */,
+				FFF1197A16139949002F1DD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFF1195116139949002F1DD4 /* Project object */;
+}
