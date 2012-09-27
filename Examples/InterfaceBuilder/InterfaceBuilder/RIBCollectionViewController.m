@@ -19,7 +19,15 @@ NSString * const CellIdentifier = @"Cell";
 
 + (void) load {
 
-	NSLog(@"%s", __PRETTY_FUNCTION__);
+	NSLog(@"%s; superclass %@", __PRETTY_FUNCTION__, NSStringFromClass([self superclass]));
+
+}
+
++ (id) alloc {
+
+	NSLog(@"%s; superclass %@", __PRETTY_FUNCTION__, NSStringFromClass([self superclass]));
+	
+	return [super alloc];
 
 }
 

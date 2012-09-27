@@ -24,16 +24,24 @@ Class class_setSuperclass(Class cls, Class newSuper);
 
 int main (int argc, char *argv[]) {
 
-	if ([UICollectionView class])
-		class_setSuperclass([RIBCollectionView class], [UICollectionView class]);
-	
-	if ([UICollectionViewCell class])
-		class_setSuperclass([RIBCollectionViewCell class], [UICollectionViewCell class]);
-	
-	if ([UICollectionViewController class])
-		class_setSuperclass([RIBCollectionViewController class], [UICollectionViewController class]);
-
 	@autoreleasepool {
+	
+		NSLog(@"%@", [UIDevice currentDevice].systemVersion);
+		
+		if ([UICollectionView class])
+			class_setSuperclass([RIBCollectionView class], [UICollectionView class]);
+		
+		if ([UICollectionViewCell class])
+			class_setSuperclass([RIBCollectionViewCell class], [UICollectionViewCell class]);
+		
+		if ([UICollectionViewController class])
+			class_setSuperclass([RIBCollectionViewController class], [UICollectionViewController class]);
+		
+		NSLog(@"%@ < %@", NSStringFromClass([RIBCollectionView class]), NSStringFromClass([RIBCollectionView superclass]));
+		
+		NSLog(@"%@ < %@", NSStringFromClass([RIBCollectionViewCell class]), NSStringFromClass([RIBCollectionViewCell superclass]));
+		
+		NSLog(@"%@ < %@", NSStringFromClass([RIBCollectionViewController class]), NSStringFromClass([RIBCollectionViewController superclass]));
 		
 		return UIApplicationMain(argc, argv, nil, NSStringFromClass([RIBAppDelegate class]));
 		
