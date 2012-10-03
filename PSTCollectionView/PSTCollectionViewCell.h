@@ -31,19 +31,7 @@
 @end
 
 
-@interface PSTCollectionViewCell : PSTCollectionReusableView {
-    UILongPressGestureRecognizer *_menuGesture;
-//    id _selectionSegueTemplate;
-//    id _highlightingSupport;
-
-    struct {
-        unsigned int selected:1;
-        unsigned int highlighted:1;
-//        unsigned int showingMenu:1;
-//        unsigned int clearSelectionWhenMenuDisappears:1;
-//        unsigned int waitingForSelectionAnimationHalfwayPoint:1;
-    } _collectionCellFlags;
-}
+@interface PSTCollectionViewCell : PSTCollectionReusableView
 
 @property (nonatomic, readonly) UIView *contentView; // add custom subviews to the cell's contentView
 

@@ -9,12 +9,14 @@
 #import "PSTCollectionView.h"
 
 @interface PSTCollectionViewController () {
+    PSTCollectionViewLayout *_layout;
+    PSTCollectionView *_collectionView;
     struct {
-        unsigned int clearsSelectionOnViewWillAppear:1;
+        unsigned int clearsSelectionOnViewWillAppear : 1;
+        unsigned int appearsFirstTime : 1; // PST exension!
     } _collectionViewControllerFlags;
 }
 @property (nonatomic, strong) PSTCollectionViewLayout* layout;
-@property (nonatomic, assign) BOOL appearsFirstTime;
 @end
 
 @implementation PSTCollectionViewController
@@ -26,7 +28,7 @@
     if((self = [super init])) {
         self.layout = layout;
         self.clearsSelectionOnViewWillAppear = YES;
-        self.appearsFirstTime = YES;
+        _collectionViewControllerFlags.appearsFirstTime = YES;
     }
     return self;
 }
@@ -42,18 +44,28 @@
 
 - (void)loadView {
     [super loadView];
-    self.collectionView = [[PSTCollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.layout];
-    [self.view addSubview:self.collectionView];
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
+
+    // if this is restored from IB, we don't have plain main view.
+    if ([self.view isKindOfClass:[PSTCollectionView class]]) {
+        _collectionView = (PSTCollectionView *)self.view;
+    }
+
+    // only create the collection view if it is not already created (by IB)
+    if (!_collectionView) {
+        self.collectionView = [[PSTCollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.layout];
+        self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        [self.view addSubview:self.collectionView];
+        self.collectionView.delegate = self;
+        self.collectionView.dataSource = self;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
-    if (_appearsFirstTime) {
+    if (_collectionViewControllerFlags.appearsFirstTime) {
         [_collectionView reloadData];
-        self.appearsFirstTime = NO;
+        _collectionViewControllerFlags.appearsFirstTime = NO;
     }
     
     if (_collectionViewControllerFlags.clearsSelectionOnViewWillAppear) {
